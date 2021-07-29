@@ -7,6 +7,7 @@ $(document).ready(function () {
     $('.pantacontact').hide();
     $('.pantaskills').hide();
     $('.titulos').addClass('animated fadeInUp');
+   
     setTimeout(function () {
         $('.about').css('opacity', '1');
         $('.about').addClass('animated fadeInRight');
