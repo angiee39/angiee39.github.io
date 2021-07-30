@@ -1,12 +1,15 @@
 $(document).ready(function () {
-    /************************************************
-    HOME
-    ************************************************/
+    // HOME
     $('.pantaportfolio').hide();
     $('.pantaabout').hide();
     $('.pantacontact').hide();
     $('.pantaskills').hide();
     $('.titulos').addClass('animated fadeInUp');
+
+    $('.titulo').css('opacity', '0');
+    setTimeout(function () {
+        $('.titulo').addClass('animated fadeInUp');
+    }, 500);
    
     setTimeout(function () {
         $('.about').css('opacity', '1');
@@ -29,7 +32,6 @@ $(document).ready(function () {
         $('.contact').addClass('animated fadeInRight');
     }, 800);
 
-
     $('.about').on('click', function () {
         $(".mail").animate({
             opacity: "0",
@@ -40,7 +42,6 @@ $(document).ready(function () {
 
         });
     });
-
 
     $('.skills').on('click', function () {
         $(".mail").animate({
@@ -71,9 +72,7 @@ $(document).ready(function () {
         }, 500);
     });
 
-    /************************************************
-    SKILLS
-    ************************************************/
+    // SKILLS
     $('.homes').on('click', function () {
         $('.pantaskills').fadeOut('fast', function () {
             $('#home').fadeIn('fast');
@@ -87,11 +86,8 @@ $(document).ready(function () {
         $(this).fadeOut("fast");
     });
     
-    /************************************************
-    PORTFOLIO
-    ************************************************/
-
-    var wndWidth = $(window).width();
+    // TOOLS
+    let wndWidth = $(window).width();
     if (wndWidth > 414) {
         $(".tbox").mouseover(function () {
             $(this).find('div').fadeIn("fast");
@@ -106,9 +102,7 @@ $(document).ready(function () {
         });
     });
 
-    /************************************************
-    ABOUT
-    ************************************************/
+    // ABOUT
     $('.homea').on('click', function () {
         $('.pantaabout').fadeOut('fast', function () {
             $('#home').fadeIn('fast');
