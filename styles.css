@@ -126,6 +126,12 @@ ABOUT
 SKILLS
 *********************************/
 
+.azure {
+    width: 90px;
+    margin-bottom: 30px;
+    filter: brightness(0.5);
+}
+
 .pantaskills {
     display: flex;
     flex-direction: column;
