@@ -70,6 +70,11 @@ HOME
     opacity: 0;
 }
 
+.cv-download {
+    margin-top: 10px;
+    opacity: 0;
+}
+
 
 /*********************************
 ABOUT
@@ -119,6 +124,23 @@ ABOUT
 #about i:hover {
     opacity: 1;
     transform: scale(1.2);
+}
+
+.cv {
+    border: 2px solid #031926;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    transition: all .3s;
+    width: 175px;
+    display: inline-block;
+}
+
+.cv:hover {
+    background-color: #031926;
+    color: #DE6449;
+    cursor: pointer;
 }
 
 
