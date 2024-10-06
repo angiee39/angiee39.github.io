@@ -36,6 +36,10 @@ $(document).ready(function () {
         $(".mail").animate({
             opacity: "0",
         }, 300);
+
+        $(".cv-download").animate({
+            opacity: "0",
+        }, 300);
         
         $('#home').fadeOut('fast', function () {
             $('.pantaabout').fadeIn('fast');
@@ -45,6 +49,10 @@ $(document).ready(function () {
 
     $('.skills').on('click', function () {
         $(".mail").animate({
+            opacity: "0",
+        }, 300);
+
+        $(".cv-download").animate({
             opacity: "0",
         }, 300);
 
@@ -59,6 +67,10 @@ $(document).ready(function () {
             opacity: "0",
         }, 300);
 
+        $(".cv-download").animate({
+            opacity: "0",
+        }, 300);
+
         $('#home').fadeOut('fast', function () {
             $('.pantaportfolio').fadeIn('fast');
 
@@ -70,6 +82,10 @@ $(document).ready(function () {
         $(".mail").animate({
             opacity: "1",
         }, 500);
+
+        $(".cv-download").animate({
+            opacity: "1",
+        }, 2000);
     });
 
     // SKILLS
